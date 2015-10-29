@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tiny example</title>
+  </head>
+  <body>
+
+    <script src="./bower_components/viz.js/viz.js"></script>
+    <script>
+		var altjs_dot = (function() {/*
+digraph G {
+  {
+    JavaScriptがわかる [shape=diamond]
+    型がほしい [shape=diamond]
+    "Flash/ActionScript3が青春だった" [shape=diamond]
+    DeNAに勤めている [shape=diamond]
+    "Ruby or Pythonが好き" [shape=diamond]
+    クラスはほしい [shape=diamond]
+    JavaScriptの文法に不満がある [shape=diamond]
+    関数型わかる [shape=diamond]
+    自分の好きな言語に深く精通している [shape=diamond]
+    好きな言語は？ [shape=diamond]
+    JavaScriptのエコシステムを使いたい [shape=diamond]
+    Java [shape=diamond]
+    MS [shape=diamond]
+    絶対にJavaScriptを書きたくない [shape=diamond]
+  }
+  JavaScriptがわかる -> 型がほしい [label = "YES"];
+  JavaScriptがわかる -> 関数型わかる [label = "NO"];
+
+  型がほしい -> "Flash/ActionScript3が青春だった" [label = "YES"];
+  型がほしい -> "Ruby or Pythonが好き" [label = "NO"];
+
+  "Flash/ActionScript3が青春だった" -> Haxe [label = "YES"];
+  "Flash/ActionScript3が青春だった" -> DeNAに勤めている [label = "NO"];
+
+  DeNAに勤めている -> JSX [label = "YES"];
+  DeNAに勤めている -> TypeScript [label = "NO"];
+
+  "Ruby or Pythonが好き" -> CoffeeScript [label = "YES"];
+  "Ruby or Pythonが好き" -> クラスはほしい [label = "NO"];
+
+  クラスはほしい -> CoffeeScript [label = "YES"];
+  クラスはほしい -> "EcmaScript6(Traceur Compiler)" [label = "YES"];
+  クラスはほしい -> JavaScriptの文法に不満がある [label = "NO"];
+
+  JavaScriptの文法に不満がある -> "https://github.com/jashkenas/coffeescript/wiki/List-of-languages-that-compile-to-JS" [label = "YES"];
+  JavaScriptの文法に不満がある -> JavaScript書けよ [label = "NO"];
+
+  関数型わかる -> 自分の好きな言語に深く精通している [label = "YES"];
+  関数型わかる -> Java [label = "NO"];
+
+  自分の好きな言語に深く精通している -> 好きな言語は？ [label = "YES"];
+  自分の好きな言語に深く精通している -> 諦めろ [label = "NO"];
+
+  好きな言語は？ -> "purescript or ghcjsの完成を待て" [label = "Haskell"];
+  好きな言語は？ -> "js_of_ocaml" [label = "Ocaml"];
+  好きな言語は？ -> JavaScriptのエコシステムを使いたい [label = "S式"];
+  好きな言語は？ -> "Scala.js" [label = "Scala"];
+  好きな言語は？ -> 諦めろ [label = "その他"];
+
+  JavaScriptのエコシステムを使いたい -> wisp [label = "YES"];
+  JavaScriptのエコシステムを使いたい -> "clojure-script" [label = "NO"];
+
+  Java -> TypeScript [label = "YES"];
+  Java -> MS [label = "NO"];
+
+  MS -> TypeScript [label = "YES"];
+  MS -> 絶対にJavaScriptを書きたくない [label = "NO"];
+
+  絶対にJavaScriptを書きたくない -> "Ruby or Pythonが好き" [label = "YES"];
+  絶対にJavaScriptを書きたくない -> JavaScript書けよ [label = "NO"];
+}
+*/}).toString().replace(/(\n)/g, '').split('*')[1];
+    document.body.innerHTML += Viz(altjs_dot);
+
+    </script>
+
+  </body>
+</html>
